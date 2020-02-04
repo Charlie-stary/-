@@ -1,0 +1,44 @@
+#include <iostream>
+#include <Windows.h>
+using namespace std;
+#pragma once
+void time_coutnotendo(string a)
+{
+	std::cout << endl;
+	int len = a.length();
+	for (int i = 0; i <= len; i++)
+	{
+		std::cout << a[i];
+		Sleep(1000);
+	}
+}
+void time_coutnotends(string a)
+{
+	std::cout << endl;
+	int len = a.length();
+	for (int i = 0; i <= len; i++)
+	{
+		std::cout << a[i];
+		Sleep(500);
+	}
+}
+void time_coutnotendt(string a)
+{
+	
+	int len = a.length();
+	for (int i = 0; i <= len; i++)
+	{
+		std::cout << a[i];
+		Sleep(100);
+	}
+}
+void time_coutnotendf(string a)
+{
+	std::cout << endl;
+	int len = a.length();
+	for (int i = 0; i <= len; i++)
+	{
+		std::cout << a[i];
+		Sleep(100);
+	}
+}
