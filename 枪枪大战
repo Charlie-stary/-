@@ -1,0 +1,98 @@
+#include <iostream>
+#include "stratdraw.h" //导入stratdraw.h
+#include "timecout.h" //导入timecout.h
+using namespace std;
+int main()
+{
+	string qm;
+	std::cout << "Hello World!\n";
+	stratdraw_stratdraw();
+	time_coutnotendo("hihi");
+	time_coutnotends("欢迎来到枪枪大战");
+	time_coutnotendf(" 作者的话：");
+	time_coutnotendf("本游戏归ii工作室版权所有，未经允许，冒仿必究，违者必究！！");
+	time_coutnotendf("本游戏最终解释权归ii工作室，ii工作室有权在法律允许的情况下在");
+	time_coutnotendt("本游戏做出改动！！");
+	time_coutnotendf("                                       ————Little wolf");
+	system("cls");
+	int fs = 0;
+	int ms = 100;
+	time_coutnotendf("现在您有");
+	cout << fs;
+	time_coutnotendt("分与");
+	cout << ms;
+	time_coutnotendt("条命");
+	cout << endl << "-------------------------------------------------------------------------------------------------------------------------------------------------" << endl;
+	time_coutnotendf("工具栏如下：");
+	int xh = 1;
+	while (xh)
+	{
+		time_coutnotendf("1:进入游戏          2：购买枪          3:退出");
+		time_coutnotendf("请输入您要执行的任务(输入序号，如果不是输入 1 2 3 那么，后果自负)");
+		int xz = 0;
+		cin >> xz;
+		if (xz == 3)
+		{
+			cout << "OK \a";
+			xh = 0;
+		}
+		if (xz == 2)
+		{
+			cout << "OK";
+			Sleep(10000000);
+			int txh = 1;
+			while (1)
+			{
+				time_coutnotendf("商店如下：");
+				time_coutnotendf("1:AWM     2:MK16    3:M416    4：95S    5:退出");
+				int wl[4] = { 10,20,60,50 };
+				int jq[4] = { 5,10,70,50 };
+				int srqdxh = 0;
+				time_coutnotendf("请输入枪的序号：");
+				cin >> srqdxh;
+				time_coutnotendf("它的威力是：");
+				cout << wl[srqdxh];
+				time_coutnotendf("它的价格是：");
+				cout << jq[srqdxh];
+				time_coutnotendf("是否要买？(输入 Y是的    N不是)");
+				string gmq;
+				cin >> gmq;
+				if (gmq == "Y")
+				{
+					time_coutnotendf("OK");
+					if (srqdxh == 1)
+					{
+						qm = "AWM";
+
+
+					}
+					if (srqdxh == 2)
+					{
+						qm = "MK16";
+
+
+					}if (srqdxh == 3)
+					{
+						qm = "M416";
+
+
+					}if (srqdxh == 4)
+					{
+						qm = "95S";
+
+
+					}
+				}
+				else
+				{
+					time_coutnotendf("OK");
+				}
+				
+			}
+		}
+		xh = 0;
+	}
+	
+	
+
+}
